@@ -1,0 +1,59 @@
+#include <conio.h>
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main ()
+
+{
+	int  x, y, v;
+	float z;
+	z= 2.5;
+
+	cout << " Enter value of x: ";
+	cin >> x;
+	cout << " Enter value of y: ";
+	cin >> y;
+	
+	
+	// v=xyz		
+	if (x==1 && y<5 && y>1) 
+	{
+		cout << setw (10);
+		cout << setprecision (2);
+		cout << "V=xyz:  V = "<< x*y*z;
+	}
+	 // v=x+y/z
+	else if (x==1 && y>=5)
+	{
+		cout << setw (10);
+		cout << setprecision (2);
+		cout << "V=x+(y/z):  V = "<< x+(y/z);
+	}
+	// v=|(x-y)/z|
+	else if (x==2 && y<=5) 
+	{
+		cout << setw (10);
+		cout << setprecision (2);
+		cout << "V=|(x-y)/z|:  V = "<< abs((x-y)/z);
+	}
+	// v= x-vy+z
+	else if (x==2 && y>5)
+	{
+		cout << setw (10);
+		cout << setprecision (2);
+		cout << "V=x-vy+z:  V = "<< x+	sqrt(y+z) << endl;
+		cout << "(Yung v po square root sign yun, naputol lang hehehe)";
+	}
+	
+	// v= v-x+y+z
+	else 
+	{
+		cout << "V=x+y+z:  V = "<< x+y+z;
+		cout << setw (10);
+		cout << setprecision (2);
+	}
+	return 0;
+}
