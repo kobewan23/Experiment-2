@@ -1,0 +1,56 @@
+#include<iostream>
+#include<conio.h>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	int hrs, packA, packB, packC,  bill;
+	char pack;
+	
+	packA= 995;
+	packB= 1495;
+	packC= 1995;
+
+
+	cout << "What package did you avail? (A, B, C): ";
+	cin >> pack;
+	cout << "How many hours did you consume?: " ;
+	cin >> hrs;
+	
+	
+	switch (pack)
+	{
+	case 'A':
+		if (hrs <= 20)
+		{
+			cout << "Your total bill is: P " << packA << endl;
+		}
+		else
+		{
+		
+			cout << "Your total bill is: P " << packA + ((hrs-10)*20) << endl;
+		}
+		break;
+	case 'B':
+		if (hrs <= 10)
+		{
+			cout << "Your total bill is: P " << packB << endl;
+		}
+		else
+		{
+			cout << "Your total bill is: P " << packB + ((hrs-20)*10) << endl;
+		}
+         break;
+	case 'C':
+		bill = 1995;
+		cout << "Your total bill is: " << bill<< endl;
+		break;
+	default:
+		cout<< "Your package was invalid";
+		
+	}
+	return 0;
+}
