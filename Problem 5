@@ -1,0 +1,25 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+	int x;
+
+	// 1-10
+	for (x=1; x<=9; x++) 
+	{
+		cout << x << ", ";
+	}
+	
+	// 10 -30 (skip counting by 2)
+	for (x = 10; x<= 30; x+=2)
+	{
+	if (x < 30)
+		cout << x<< ", ";
+	else
+		cout << x;
+	}
+	return 0;
+}
