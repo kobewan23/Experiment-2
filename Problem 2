@@ -1,0 +1,28 @@
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main ()
+
+{
+	float x, y;
+	int response;
+	
+	
+	cout << "Enter previous reading: " ;
+		cin >> x;
+	cout << "Enter recent reading: " ;
+		cin >> y;
+	cout << "Reading: " << y-x ;
+	cout << "\n Do you have unpaid balance? (Press 1 if Yes and 2 if No)  ";
+		cin >> response;
+	
+	if (response == 2)
+		cout << "Your total bill is: P" << ((y-x)*1.10) + 35;
+	else if (response == 1)
+		cout << "Your total bill is: P" << ((y-x)*1.10) + 55;
+	else 
+		cout << "Invalid input" ;
+	return 0;
+}
