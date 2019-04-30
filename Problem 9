@@ -1,0 +1,30 @@
+#include<iostream>
+#include<conio.h>
+
+
+using namespace std;
+int main()
+{
+	int x, y, columns, rows;
+	cout << "Enter number of rows: ";
+		cin >> rows;
+	cout << "Enter number of columns: ";
+		cin >> columns;
+
+	if (rows==0)
+		cout << "Invalid number of rows";
+	else if (columns==0)
+		cout << "Invalid number of columns";
+	else
+	{
+		for (x=0; x<rows ;x++)
+		{
+			for (y=0; y<columns; y++)
+			{
+				cout << "*";
+			}
+			cout << endl;
+		}
+	}
+	return 0;
+}
