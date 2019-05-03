@@ -1,23 +1,25 @@
 #include <iostream>
-#include <conio.h>
+
 using namespace std;
 
 int main()
 {
+int x, sum;
 
- 	int x, sum, n;
- 	sum=0;
- 	n=1;
- 	
- 	cout << "Enter a positive integer: ";
- 		cin >> x;
- 	if (x<=0)
- 		cout << "You entered 0 or a negative integer";
- 		for (n=1;n<=x;n++)
- 			{
- 				sum+=n;
-			 }
-	cout << "The sum of 1 to " << x << " is: " << sum;
-	
-	return 0;
+while (x > 0)
+    {
+        cout << "Enter an integer: "; 
+            cin >> x;
+    if (x > 0)
+            {
+             sum = (x * (x + 1)) / 2;
+             cout << "The sum of 1 to " << x << " is: " << sum << endl;
+            continue;
+            }
+            else 
+            {
+            cout << "Thank You!" << endl;
+            }
+    }
+    return 0;
 }
