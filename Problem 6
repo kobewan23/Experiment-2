@@ -28,9 +28,6 @@ for (x = 0; x <= 21; x++)
         n2 = next;
         
         cout <<  next << ", ";
-		}
-	
-	
-	
+	}
 	return 0;
 }
