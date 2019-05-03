@@ -6,7 +6,7 @@ using namespace std;
 int main ()
 
 {
-	float x, y;
+	float x, y, bal;
 	int response;
 	
 	
@@ -21,7 +21,11 @@ int main ()
 	if (response == 2)
 		cout << "Your total bill is: P" << ((y-x)*1.10) + 35;
 	else if (response == 1)
-		cout << "Your total bill is: P" << ((y-x)*1.10) + 55;
+	    {
+	    cout << " How much is your unpaid balance?: ";
+	        cin >> bal;
+		cout << "Your total bill is: P" << ((y-x)*1.10) + 55+bal;
+	    }
 	else 
 		cout << "Invalid input" ;
 	return 0;
